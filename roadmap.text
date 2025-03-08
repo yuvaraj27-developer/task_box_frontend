@@ -1,0 +1,22 @@
+TaskBox is a software that helps the user to priortize tasks.
+
+
+RoadMap (Features):
+
+1. Landing page
+  - Nav bar with About, Feature fakes, Profile
+  - Dashboard for TaskBox - About, Feature fakes, Profile creation
+2. Task Management page
+  - Create, Update, Delete tasks
+  - List of tasks
+  - Categories
+    = Must (High priority and Tight time)
+    = Should (High priority and loose time)
+    = Could (Low priority and Tight time)
+    = Maybe (Low priority and loose time)
+    = Uncategorized
+  - Drag and Drop of Task
+  - Google calendar Integration - for reminder and deadline
+3. Planning poker
+  - P2P - Y.js
+  - Playground
