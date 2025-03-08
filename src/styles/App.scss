@@ -1,0 +1,46 @@
+@import 'mixins';
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.title-container {
+  @include flex-row;
+
+  div:first-child {
+    @include flex-row;
+    margin: 0 1em;
+    &:hover {
+      filter: drop-shadow(0 0 2em #61dafbaa);
+    }
+  }
+
+  div:last-child {
+    @include flex-column;
+    margin: 0 1em;
+    align-items: flex-end;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .title-logo .rotate-component {
+    transform-origin: center;
+    animation: logo-spin infinite 20s;
+  }
+}
