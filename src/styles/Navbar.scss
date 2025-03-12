@@ -1,0 +1,36 @@
+@import 'mixins';
+
+.navbar-container {
+  @include flex-row;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  padding: 24px;
+  border-bottom: 1px solid #262626;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background: #0f0f0fcc;
+
+  span:first-child {
+    @include flex-row;
+
+    h3 {
+      @media (max-width: 500px) {
+        display: none;
+      }
+      font-size: 1.2em;
+      margin: 0 0 0 16px;
+    }
+  }
+
+  span:last-child {
+    @include flex-row;
+  }
+}
+
+.navbar-logo {
+  width: calc(30px + 2vw);
+  height: calc(30px + 2vw);
+}

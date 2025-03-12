@@ -2,9 +2,9 @@
 
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  min-height: 100vh;
+  width: 100%;
 }
 
 .title-container {
@@ -12,7 +12,6 @@
 
   div:first-child {
     @include flex-row;
-    margin: 0 1em;
     &:hover {
       filter: drop-shadow(0 0 2em #61dafbaa);
     }
@@ -22,11 +21,24 @@
     @include flex-column;
     margin: 0 1em;
     align-items: flex-end;
+
+    h1 {
+      font-size: 1.5em;
+    }
+
+    p {
+      font-size: 0.5em;
+    }
   }
 
   &:hover {
     cursor: pointer;
   }
+}
+
+.title-logo {
+  width: calc(75px + 2vw);
+  height: calc(75px + 2vw);
 }
 
 @keyframes logo-spin {
