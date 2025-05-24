@@ -16,6 +16,7 @@ RoadMap (Features):
     = Maybe (Low priority and loose time)
     = Uncategorized
   - Drag and Drop of Task
+  - All the data handled should be made on a wrapper, so that it can be integration with API later.
   - Google calendar Integration - for reminder and deadline
 3. Planning poker
   - P2P - Y.js
