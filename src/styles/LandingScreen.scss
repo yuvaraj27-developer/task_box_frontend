@@ -1,0 +1,55 @@
+@import 'mixins';
+
+.landing-screen-container {
+  @include flex-column;
+}
+
+.title-logo {
+  width: calc(75px + 2vw);
+  height: calc(75px + 2vw);
+}
+
+.title-container {
+  @include flex-row;
+
+  div:first-child {
+    @include flex-row;
+    &:hover {
+      filter: drop-shadow(0 0 2em #61dafbaa);
+    }
+  }
+
+  div:last-child {
+    @include flex-column;
+    margin: 0 1em;
+    align-items: flex-end;
+
+    h1 {
+      font-size: 1.5em;
+    }
+
+    p {
+      font-size: 0.5em;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .title-logo .rotate-component {
+    transform-origin: center;
+    animation: logo-spin infinite 20s;
+  }
+}

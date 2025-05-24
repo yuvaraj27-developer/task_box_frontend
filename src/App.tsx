@@ -1,4 +1,4 @@
-import TitleLogoSVG from './SVG/TitleLogoSVG';
+import LandingScreenContainer from './components/landing_screen/LandingScreenContainer';
 import Navbar from './components/navbar/Navbar';
 import './styles/App.scss'
 
@@ -6,17 +6,11 @@ function App() {
   return (
     <>
       <Navbar />
-      <section className='title-container'>
-        <div>
-          <TitleLogoSVG className='title-logo'/>
-        </div>
-        <div>
-          <h1>Task Box</h1>
-          <p>Unbox your Productivity</p>
-        </div>
+      <section className='section-container'>
+        <LandingScreenContainer />
       </section>
       <footer>
-
+        {/* This needs to be  */}
       </footer>
     </>
   )

@@ -1,0 +1,19 @@
+@import '../../styles/mixins';
+
+.button-tag {
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 0.4em 1em;
+  margin: 24px 0px;
+  font-size: 0.7em;
+  cursor: pointer;
+
+  p {
+    color: #000000;
+    font-family: 'Quicksand';
+  }
+
+  &:hover {
+    background: #fffffff3;
+  }
+}
